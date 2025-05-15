@@ -4,9 +4,15 @@ const nameInput = document.getElementById('nome')
 const qtdInput = document.getElementById('quantidade')
 const precoInput = document.getElementById('preco')
 const productList = document.getElementById('product-list')
+const submit = form.querySelector('button[type="submit"]');
+
+let editando = false;
+let editandoIndex = null;
 
 //lista de produtos vazia inicialmente
-let products = [];
+let products = JSON.parse(localStorage.getItem('products')) || [];
+
+renderProducts();
 
 //função ara atualizar as tabelas com os produtos
 function renderProducts() {
@@ -31,6 +37,7 @@ function renderProducts() {
 
 
 //função para envio do formulário "submit" é o id do botão lá no html
+//criar
 form.addEventListener('submit', function (event) {
     //evento para a página não atualizar quando eu enviar o formulário
     event.preventDefault();
@@ -43,13 +50,20 @@ const product = {
     preco: parseFloat(precoInput.value)
 };
 
-//adiciona produto na lista
-products.push(product);
+if (editando) {
+    products[editandoIndex] = product;
+    editando = false;
+    editandoIndex = null;
+    submit.textContent = "Adicionar";
+} else {
 
+    //adiciona produto na lista
+    products.push(product);
+}
+
+saveProducts();
 //chamando render pro html
 renderProducts();
-
-console.log(product);
 //limpa os dados escritos no formulário
 form.reset();
 
@@ -63,11 +77,9 @@ function editProduct(index) {
     qtdInput.value = product.quantidade;
     precoInput.value = product.preco;
 
-    products.splice(index, 1);
-
-    renderProducts();
-
-    console.log(products);
+    editando = true;
+    editandoIndex = index;
+    submit.textContent = "salvar";
 }
 
 //delete
@@ -77,7 +89,15 @@ function deleteProduct(index) {
 
     if (confirmDelete) {
         products.splice(index, 1); //remove um item do array products na posição index
+        //sempre salvando no local storage depois de salvar deletar ou adicionar
+        saveProducts();
         renderProducts(); //atualiza tabela
     }
 }
+
+//salvando no local storage, pegando a lista em products e transformando em json
+function saveProducts() {
+    localStorage.setItem('products', JSON.stringify(products));
+}
+
 
