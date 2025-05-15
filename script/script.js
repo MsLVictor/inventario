@@ -21,7 +21,7 @@ function renderProducts() {
             <td>${products.preco.toFixed(2)}</td>
             <td>
                 <button class="edit" onclick="editProduct(${index})">Editar</button>
-                <button class="delet" onclick="deleteProduct(${index})">Excluir</button>
+                <button class="delete" onclick="deleteProduct(${index})">Excluir</button>
             </td>
         `;
 
@@ -56,5 +56,28 @@ form.reset();
 });
 
 //edit
+function editProduct(index) {
+    const product = products[index];
+
+    nameInput.value = product.nome;
+    qtdInput.value = product.quantidade;
+    precoInput.value = product.preco;
+
+    products.splice(index, 1);
+
+    renderProducts();
+
+    console.log(products);
+}
 
 //delete
+function deleteProduct(index) {
+    //abre uma janelinha pra confirmar :D
+    const confirmDelete = confirm("tem certeza que deseja excluir este produto da lista?");
+
+    if (confirmDelete) {
+        products.splice(index, 1); //remove um item do array products na posição index
+        renderProducts(); //atualiza tabela
+    }
+}
+
