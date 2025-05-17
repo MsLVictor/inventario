@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 # Inventário
 =======
 # inventário
->>>>>>> e91d516725bf554c8eec138e68df544104caead2
 um projeto para avaliação de front-end
 
 sistema de controle de estoque simples, mas não tão simples assim.
