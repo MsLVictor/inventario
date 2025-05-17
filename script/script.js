@@ -62,6 +62,8 @@ if (editando) {
 }
 
 saveProducts();
+
+showMessage("Produto salvo/adicionado com sucesso!");
 //chamando render pro html
 renderProducts();
 //limpa os dados escritos no formulário
@@ -80,6 +82,11 @@ function editProduct(index) {
     editando = true;
     editandoIndex = index;
     submit.textContent = "salvar";
+
+    window.scrollTo({
+  top: 0,
+  behavior: 'smooth' // faz a rolagem suave
+});
 }
 
 //delete
@@ -91,6 +98,7 @@ function deleteProduct(index) {
         products.splice(index, 1); //remove um item do array products na posição index
         //sempre salvando no local storage depois de salvar deletar ou adicionar
         saveProducts();
+        showMessage("Produto excluído com sucesso!");
         renderProducts(); //atualiza tabela
     }
 }
@@ -100,4 +108,13 @@ function saveProducts() {
     localStorage.setItem('products', JSON.stringify(products));
 }
 
+function showMessage(text, type = 'success') {
+  const message = document.getElementById('message');
+  message.textContent = text;
+  message.className = `alert alert-${type} mt-3`;
+  message.classList.remove('d-none');
 
+  setTimeout(() => {
+    message.classList.add('d-none');
+  }, 3000);
+}
