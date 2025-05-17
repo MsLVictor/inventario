@@ -1,6 +1,4 @@
 # Inventário
-=======
-# inventário
 um projeto para avaliação de front-end
 
 sistema de controle de estoque simples, mas não tão simples assim.
