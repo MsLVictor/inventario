@@ -35,6 +35,8 @@ Este é um projeto feito a partir de HTML, CSS e JavaScript.
 1. clone o repositório na sua máquina.
 2. Use o liveserver para rodar. se clicar no index e abrir direto no navegador, não vai funcionar(modulos js não funciona dessa forma por causa da segurança. só funciona em servidor rodando.)
 
+- Ou você pode entrar pelo link https://inventario-3a882.web.app/
+
 
 ## Desenvolvido por: 
 Victor Leite - victormleitedev@gmail.com
