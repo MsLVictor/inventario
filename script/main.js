@@ -1,4 +1,4 @@
-import { setupForm  } from "./form.js";
+import { setupForm  } from "./script/form.js";
 
 //função para iniciar o sistema
 document.addEventListener('DOMContentLoaded', () => {
