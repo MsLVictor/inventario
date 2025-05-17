@@ -16,20 +16,20 @@ Este é um projeto feito a partir de HTML, CSS e JavaScript.
 - Organização do código usando módulos JS e CSS separados(valeu PRESIDA pelas dicas!).
 
 ## ESTRUTURA DO PROJETO
-- `index.html` - arquivo principal com a estrutura da página.
-- `css/` - adicionei css puro e testei alguns frameworks(bootstrap) para fazer o menu hamburguer.
-    -`body.css` - estilização do body.
-    -`container.css` - estilização do div.container.
-    -`form.css` - estilização do formulário.
-    -`inpu_button.css` - estilização dos botões e inputs.
-    -`nav.css` - alguns detalhes do nav.
+- `index.html` arquivo principal com a estrutura da página.
+- `css/` adicionei css puro e testei alguns frameworks(bootstrap) para fazer o menu hamburguer.
+    -`body.css` estilização do body.
+    -`container.css` estilização do div.container.
+    -`form.css` estilização do formulário.
+    -`inpu_button.css` estilização dos botões e inputs.
+    -`nav.css` alguns detalhes do nav.
 -`script`
-    -`main.js` - ponto inicial que inicializa o resto da estrutura toda.
-    -`form.js` - aqui é onde eu fiz toda a lógica do CRUD(Create, Read, Update, Delete).
-    -`render.js` - Funções para renderizar os produtos.
-    -`storage.js` - é aqui onde ficou o LocalStorage(salvamento de persistente em navegador).
-    -`ui.js` - funções para exibir mensagens de iteração com o sistema.
-    -`script.js` - isso aqui foi o primeiro arquivo js que criei, antes de separar.
+    -`main.js` ponto inicial que inicializa o resto da estrutura toda.
+    -`form.js` aqui é onde eu fiz toda a lógica do CRUD(Create, Read, Update, Delete).
+    -`render.js` Funções para renderizar os produtos.
+    -`storage.js` é aqui onde ficou o LocalStorage(salvamento de persistente em navegador).
+    -`ui.js` funções para exibir mensagens de iteração com o sistema.
+    -`script.js` isso aqui foi o primeiro arquivo js que criei, antes de separar.
 
 ## como rodar?
 1. clone o repositório na sua máquina.
