@@ -1,6 +1,6 @@
-import { renderProducts } from './script/render.js';
-import { showMessage } from './script/ui.js';
-import { saveProducts, getProducts } from './script/storage.js';
+import { renderProducts } from './render.js';
+import { showMessage } from './ui.js';
+import { saveProducts, getProducts } from './storage.js';
 
 export function setupForm() {
   const form = document.getElementById('product-form');

@@ -29,12 +29,12 @@ Este é um projeto feito a partir de HTML, CSS e JavaScript.
     -`render.js` - Funções para renderizar os produtos.
     -`storage.js` - é aqui onde ficou o LocalStorage(salvamento de persistente em navegador).
     -`ui.js` - funções para exibir mensagens de iteração com o sistema.
+    -`script.js` - isso aqui foi o primeiro arquivo js que criei, antes de separar.
 
 ## como rodar?
 1. clone o repositório na sua máquina.
-2. Use o liveserver para rodar. se clicar no index e abrir direto no navegador, não vai funcionar.
+2. Use o liveserver para rodar. se clicar no index e abrir direto no navegador, não vai funcionar(modulos js não funciona dessa forma por causa da segurança. só funciona em servidor rodando.)
 
-OU SE QUISER, pode entrar no link: https://mslvictor.github.io/inventario/ aproveite enquanto eu não implementei página de login e banco de dado em núvem. :D
 
 ## Desenvolvido por: 
 Victor Leite - victormleitedev@gmail.com
