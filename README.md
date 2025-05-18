@@ -39,7 +39,7 @@ Este é um projeto feito a partir de HTML, CSS e JavaScript.
 
 
 ## Desenvolvido por: 
-Victor Leite - victormleitedev@gmail.com
-github       - https://github.com/MsLVictor
-linkedin     - https://www.linkedin.com/in/victormleite/
+- Victor Leite  victormleitedev@gmail.com
+- github        https://github.com/MsLVictor
+- linkedin      https://www.linkedin.com/in/victormleite/
 
