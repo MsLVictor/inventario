@@ -1,0 +1,27 @@
+.sobre-mim {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+.img-eu {
+    
+    max-width: 40%;
+    
+    width: auto;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   
+
+}
+
+.resumo {
+    
+
+    width: 100%;
+    padding: 20px;
+    
+}
